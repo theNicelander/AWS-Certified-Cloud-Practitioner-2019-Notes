@@ -13,10 +13,9 @@ By the end you should be able to:
 * Identify sources of documentation and technical assistance
 * Describe the basic characteristics of deploying and operating in AWS cloud
 
-# Module 1 - Introduction
+# [Module 1 - Introduction](module1.md)
 > **Outcome**: Define what AWS is and the basic infrastructure
 
-[LINK](module1.md)
 
 **Cloud computing**: Refers to the on-demand delivery of it resources and applications via the internet without having to invest in hardware. Automatically scale computing to meet our needs
 
@@ -33,3 +32,40 @@ Reasons why companies are moving to the cloud:
 * **Management Console** - GUI
 * **CLI (command line interface)** - Open source, language agnostic
 * SDKs (software development kits)
+
+# [Module 2 - Core services](module2.md)
+> **Outcome**: Talk about key services in AWS and common use-cases
+
+## EC2 - Elastic cloud compute
+Refers to the compute resources in AWS.
+
+**AMI** (Amazon Machine Image): The software load that will come with the image
+
+**Instance** type: The underlying hardware (cpu, ram)
+
+## EBS - Elastic Block store
+Storage unit for your EC2 instances, HDD or SSD. Can create snapshots and change in size if needed
+
+## S3 - Simple Storage Service
+Fully managed durable storage service. Virtually unlimited objects, securely access from anywhere.
+* Files places into buckets, that have globally unique names within a given region.
+* Billed for what you use.
+
+## AWS Global infrastructure
+Can be broken into 3 topics
+* **Regions** - Comprised of 2 or more availability zone
+* **Availability zone** (AZs)-  Collection of data centres within a given region
+* **Edge locations**
+
+## VPC - Virtual Private Cloud
+A virtual network in AWS cloud, allowing complete network control with several layers of security. Other AWS services (such as EC2) are deployed into this VPC
+* Live within a Region
+* **Subnets** divide a VPC and allow it to span multiple AZs.
+* **Route tables** control traffic going of of the subnet
+* **Internet Gateways** allow access to the internet from VPCs
+* **NAT gateways** allow private subnet resources access to internet
+* **Network Access Control Lists** (NACL) control access to subnets, stateless
+
+## AWS Security groups
+Act as built in built-in firewalls, control how accessible instances are and what traffic is allowed and denied. Default all incoming is denied and outgoing allowed
+
