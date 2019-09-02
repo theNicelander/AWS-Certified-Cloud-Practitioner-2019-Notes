@@ -1,3 +1,6 @@
+# Module 1 - Introduction
+> **Outcome**: Define what AWS is and the basic infrastructure
+
 **Cloud computing**: Refers to the on-demand delivery of it resources and applications via the internet without having to invest in hardware. Automatically scale computing to meet our needs
 * Reduce risk by quickly and elastically to changing market, quickly test and throwaway
 * Scalability: Use services at your  own risk
