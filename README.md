@@ -69,3 +69,31 @@ A virtual network in AWS cloud, allowing complete network control with several l
 ## AWS Security groups
 Act as built in built-in firewalls, control how accessible instances are and what traffic is allowed and denied. Default all incoming is denied and outgoing allowed
 
+# Module 4 - Architecture
+> Describe basic characteristics of AWS cloud, principles and value proposition
+
+## Well architected framework
+There to help customers. Guide to help you with the design of your architecture
+
+### 5 Pillars:
+**Security**: Ability to protect systems while delivering value through risk assessment and mitigation. Least privilege, all layers, shared responsibility.
+
+**Reliability**: Ability to recover from failure & to meet demand. Foundations, change management, failure management. Test, automatically recover, scale horizontally
+
+**Performance efficiency**: Select the best solution, review when new things come out, monitor performance and know the tradeoffs for your solution. Democratise advanced technologies, go serverless, experiment
+
+**Cost optimisation**: Cost effective resources, match supply with demand, increase cost awareness, optimise over time.
+
+**Operational excellence**: Manage and automate changes, respond to events, define the standards to mange daily operations
+
+## Fault tolerance
+Ability of a system to remain operational
+* SQS, S3
+* RDS - Auto backup, multi-az
+
+## Highly available
+Ensure systems are always accessible
+* Elastic load balancers, elastic IP, route53, autoscaling, Cloudwatch
+
+## Web hosting
+Can host many types of web applications. AWS allows you to scale as your business grows and to meet sudden spikes of demand
