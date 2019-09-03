@@ -13,6 +13,7 @@ By the end you should be able to:
 * Identify sources of documentation and technical assistance
 * Describe the basic characteristics of deploying and operating in AWS cloud
 
+---------------------------------------
 # [Module 1 - Introduction](module1.md)
 > **Outcome**: Define what AWS is and the basic infrastructure
 
@@ -33,6 +34,7 @@ Reasons why companies are moving to the cloud:
 * **CLI (command line interface)** - Open source, language agnostic
 * SDKs (software development kits)
 
+---------------------------------------
 # [Module 2 - Core services](module2.md)
 > **Outcome**: Talk about key services in AWS and common use-cases
 
@@ -69,7 +71,43 @@ A virtual network in AWS cloud, allowing complete network control with several l
 ## AWS Security groups
 Act as built in built-in firewalls, control how accessible instances are and what traffic is allowed and denied. Default all incoming is denied and outgoing allowed
 
-# Module 4 - Architecture
+----------------------------------------------
+# [Module 3 - Integrated Services](module3.md)
+
+## Application load balancer
+Balance incoming traffic to the correct application. Additional protocols, access logs, cloud watch, health checks. 
+
+## Auto Scaling
+Helps ensure correct number of EC2 instances available to handle load. Automatically scale in or out depending on load based on your settings. 
+* **launch configuration**: EC2 types
+* **auto scaling group**: Where & how - vpc, min, max desired
+* **auto scaling policy**: When to scale up/down - dynamic w/ cloudwatch or scheduled
+  
+## Route53
+DNS service (domain name system), translating "example.com" into "54.85.178.219". 
+
+## RDS - Relations Database Services
+Managed service to setup databases. You manage the data, AWS the rest. Ability to configure Multi-AZ for availability++ & durability++. 
+
+**Challenges with traditional** DBs: Maintenance, patching, backups, availability, scalability, security
+
+**Database instance**: Type of database (MySQL, Aurora, SQL Server, PostgreSQL, mariaDB, oracle), underlying cpu/memory
+* **Read replica**: Updates to the database are automatically replicated in the secondary instance read replica. Can be created in a different region for disaster resilience and better global availability
+
+## Other
+**AWS Lambda**: Event driven, serverless compute service. No servers to manage, continues scaling, pay for each second used. Connective tissue between AWS services.
+
+**Elastic Beanstalk**: PaaS. Easily provision resources for your application. 
+
+**SNS - Simple Notification Service**: Send messages/emails/notifications to individuals/groups based on events.
+
+**CloudWatch**: Monitor AWS resources and applications in real time. CPU, data transfer, Disk IO, log files, set alarms, react to changes.
+  
+**CloudFormation**: Simplifies task of repeatedly creating groups of related resources by using JSON/YAML template files. Infrastructure through code. 
+
+---------------------------------------
+# [Module 4 - Architecture](module4.md)
+
 > Describe basic characteristics of AWS cloud, principles and value proposition
 
 ## Well architected framework
