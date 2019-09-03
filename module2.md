@@ -36,7 +36,7 @@ Can be broken into 3 topics
   * Physically and logically separate
 * Edge locations
   * Content delivery network
-  * Amazon Cloudfront
+  * Amazon CloudFront
   * Locations in high density areas, where content is cached in these locations
 
 ## VPC - Virtual Private Cloud
